@@ -1,0 +1,36 @@
+{
+  "verification_code": "AI-A2-7889",
+  "rows_raw": 260,
+  "columns": [
+    "rainfall_mm",
+    "avg_temp_c",
+    "soil_moisture_pct",
+    "fertilizer_kg",
+    "field_size_ha",
+    "season",
+    "cooperative_support",
+    "yield_tons",
+    "high_risk"
+  ],
+  "missing_values": {
+    "soil_moisture_pct": 13,
+    "fertilizer_kg": 13
+  },
+  "duplicate_rows": 3,
+  "ranges_ok": true,
+  "leakage_check": "passed: no yield_tons, yield_per_ha or high_risk in model inputs",
+  "model_inputs": [
+    "rainfall_mm",
+    "avg_temp_c",
+    "soil_moisture_pct",
+    "fertilizer_kg",
+    "field_size_ha",
+    "season",
+    "cooperative_support"
+  ],
+  "rows_after_cleaning": 257,
+  "handling": {
+    "duplicates": "dropped exact duplicate rows before the split",
+    "missing_values": "median imputation (numeric) fitted on training rows only, inside the pipeline"
+  }
+}

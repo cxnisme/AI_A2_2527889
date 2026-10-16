@@ -1,0 +1,39 @@
+{
+  "verification_code": "AI-A2-7889",
+  "seed": 7889,
+  "target": "yield_tons",
+  "n_train": 192,
+  "n_test": 65,
+  "baseline": {
+    "name": "mean_baseline",
+    "mae": 2.301330024038462,
+    "rmse": 2.76336478723042,
+    "r2": -0.022161851361146123
+  },
+  "candidates": {
+    "linear_regression": {
+      "mae": 0.9468139236349594,
+      "rmse": 1.175174365937658,
+      "r2": 0.8151379140438921,
+      "cv_rmse_mean": 1.0018404041115023,
+      "cv_rmse_std": 0.1209377467055105
+    },
+    "random_forest": {
+      "mae": 1.1927888307692316,
+      "rmse": 1.4895185777914146,
+      "r2": 0.7030146144520422,
+      "cv_rmse_mean": 1.2509988208239218,
+      "cv_rmse_std": 0.12799970277240683
+    },
+    "gradient_boosting": {
+      "mae": 1.1200472920930018,
+      "rmse": 1.4380306415690427,
+      "r2": 0.7231914437534881,
+      "cv_rmse_mean": 1.1627513314875952,
+      "cv_rmse_std": 0.13427561249893255
+    }
+  },
+  "selected_model": "linear_regression",
+  "selection_rule": "lowest 5-fold cross-validated RMSE on the training set",
+  "selection_reason": "linear_regression had the lowest cross-validated RMSE (1.0018 t). On the held-out test set it scored MAE 0.9468, RMSE 1.1752, R2 0.8151 versus the mean baseline MAE 2.3013, RMSE 2.7634, R2 -0.0222."
+}

@@ -1,0 +1,75 @@
+{
+  "verification_code": "AI-A2-7889",
+  "seed": 7889,
+  "features_used": [
+    "rainfall_mm",
+    "avg_temp_c",
+    "soil_moisture_pct",
+    "fertilizer_kg",
+    "field_size_ha",
+    "season",
+    "cooperative_support"
+  ],
+  "scaling": "imputation, one-hot encoding and StandardScaler fitted on training rows",
+  "scores": {
+    "2": {
+      "silhouette": 0.2402797472373103,
+      "inertia": 1147.5244895139829
+    },
+    "3": {
+      "silhouette": 0.1754444734286057,
+      "inertia": 1056.025778927555
+    },
+    "4": {
+      "silhouette": 0.15414791582395668,
+      "inertia": 960.5017368406674
+    },
+    "5": {
+      "silhouette": 0.15846069604514043,
+      "inertia": 906.5809440414911
+    },
+    "6": {
+      "silhouette": 0.14635148659708744,
+      "inertia": 848.9708307113343
+    }
+  },
+  "selected_k": 2,
+  "selection_rule": "highest silhouette score among K = 2..6",
+  "profiles": [
+    {
+      "cluster": 0,
+      "n_train": 101,
+      "share_of_train": 0.5260416666666666,
+      "feature_means": {
+        "rainfall_mm": 1031.251989108911,
+        "avg_temp_c": 18.910406930693068,
+        "soil_moisture_pct": 53.08886600000001,
+        "fertilizer_kg": 126.10292061855672,
+        "field_size_ha": 2.0581346534653466,
+        "cooperative_support_share": 0.5148514851485149,
+        "season_A_share": 1.0
+      },
+      "mean_yield_tons": 12.54191485148515,
+      "high_risk_rate": 0.45544554455445546,
+      "summary": "mostly season A"
+    },
+    {
+      "cluster": 1,
+      "n_train": 91,
+      "share_of_train": 0.4739583333333333,
+      "feature_means": {
+        "rainfall_mm": 1027.8361164835164,
+        "avg_temp_c": 19.506950549450547,
+        "soil_moisture_pct": 48.51701445783133,
+        "fertilizer_kg": 124.98619186046511,
+        "field_size_ha": 2.1641307692307694,
+        "cooperative_support_share": 0.4945054945054945,
+        "season_A_share": 0.0
+      },
+      "mean_yield_tons": 11.478746153846155,
+      "high_risk_rate": 0.5494505494505495,
+      "summary": "mostly season B"
+    }
+  ],
+  "interpretation": "K=2 gave the highest silhouette score (0.2403). Cluster structure is weak: the groups overlap and should be read as soft segments. Yield and risk rates are shown for description only; they were not used to form clusters. The data are synthetic and drawn from uniform distributions, so clusters are convenient groupings of similar conditions, not natural farm types."
+}

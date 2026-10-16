@@ -1,0 +1,54 @@
+{
+  "project": "AI_A2_2527889",
+  "verification_code": "AI-A2-7889",
+  "student_id": "ug25/27889@ines.ac.rw",
+  "seed": 7889,
+  "data_sha256": "dedec532494f23dd25fe7747ed497996b86c368459eff63c75494dc7c915f1aa",
+  "data_rows_raw": 260,
+  "data_rows_clean": 257,
+  "synthetic_data": true,
+  "inputs": [
+    "rainfall_mm",
+    "avg_temp_c",
+    "soil_moisture_pct",
+    "fertilizer_kg",
+    "field_size_ha",
+    "season",
+    "cooperative_support"
+  ],
+  "selected_regression_model": "linear_regression",
+  "selected_classification_model": "logistic_regression",
+  "selected_k": 2,
+  "test_metrics": {
+    "regression": {
+      "mae": 0.9468139236349594,
+      "rmse": 1.175174365937658,
+      "r2": 0.8151379140438921
+    },
+    "classification": {
+      "precision": 0.8648648648648649,
+      "recall": 1.0,
+      "f1": 0.927536231884058,
+      "roc_auc": 0.9810606060606061
+    }
+  },
+  "cluster_profiles": [
+    {
+      "cluster": 0,
+      "summary": "mostly season A",
+      "n_train": 101
+    },
+    {
+      "cluster": 1,
+      "summary": "mostly season B",
+      "n_train": 91
+    }
+  ],
+  "versions": {
+    "python": "3.12.3",
+    "scikit_learn": "1.9.1",
+    "numpy": "1.26.3",
+    "pandas": "2.2.3"
+  },
+  "intended_use": "Classroom decision-support prototype; not a replacement for an agronomist."
+}
