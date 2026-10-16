@@ -20,3 +20,9 @@ Claude (Anthropic), via the Claude chat interface.
 ## Verification
 All numbers in the report are read from `artifacts/` by `src/report.py`; the data fingerprint and metrics
 reproduce on re-running `run_all.py`.
+
+## Follow-up assistance (2026-10-16)
+GitHub Copilot (Copilot SDK in VS Code) was used to check the assignment requirements, update the README
+and Python cache exclusions, regenerate the pipeline outputs and PDFs, run the prediction examples and tests,
+and publish the project snapshot to GitHub. It did not write new student interpretations, record the demo video,
+or sign the declaration. The student should review and update this disclosure to match all work actually done.

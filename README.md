@@ -61,7 +61,8 @@ Invalid input returns HTTP 422 with `{"error": "invalid_input", "details": [{"fi
 
 ## Repository
 - Repository URL: https://github.com/cxnisme/AI_A2_2527889
-- Final commit hash: pending repository write access and final commit; obtain it with `git rev-parse HEAD` after pushing.
+- Project snapshot commit: `2efbe64860241fa273ee54ec092f6ef6fcd3bf93`
+- Final submission commit hash: pending your required student-authored updates; obtain it with `git rev-parse HEAD` after the final commit.
 
 ## Still required before submission
 - Rewrite the three draft interpretations in `docs/MY_INTERPRETATIONS.md` in your own words and rebuild the report.
