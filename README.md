@@ -37,10 +37,10 @@ uvicorn app:app --host 127.0.0.1 --port 8000      # interactive docs: http://127
 | `data/generate_data.py`, `data/AI_A2_2527889.csv` | generator and generated data |
 | `models/` | saved pipelines (`regression_model`, `classification_model`, `clustering_model`) + `model_metadata.json` |
 | `artifacts/` | `data_fingerprint.txt`, `validation_report.json`, `regression_metrics.json`, `classification_metrics.json`, `clustering_report.json`, `test_predictions.csv`, `plots/residuals.png`, `plots/confusion_matrix.png`, `plots/clusters.png` |
-| `docs/AI_A2_2527889_REPORT.pdf` | 7-page report generated from the artifacts; `docs/MY_INTERPRETATIONS.md` holds my three interpretations |
+| `docs/AI_A2_2527889_REPORT.pdf` | 7-page report generated from the artifacts; `docs/MY_INTERPRETATIONS.md` currently contains draft interpretations that must be rewritten by the student |
 | `samples/` | `valid.json`, `invalid.json` |
 | `tests/` | 10 pytest tests |
-| `evidence/` | demo video, test log, declaration, `AI_USE.md` |
+| `evidence/` | test log, declaration, `AI_USE.md`, and the required demo video (not yet recorded) |
 | `tools/make_evidence.py` | builds the test-log and declaration PDFs |
 
 Extra packages beyond the required list: **reportlab** (builds the PDF report), **httpx** (needed by FastAPI's test client), **uvicorn** (serves the API).
@@ -61,14 +61,13 @@ Invalid input returns HTTP 422 with `{"error": "invalid_input", "details": [{"fi
 
 ## Repository
 - Repository URL: https://github.com/cxnisme/AI_A2_2527889
-- Project snapshot commit: `a9249518e353fcae70e8a0033713d5b28df64871`
-- Final submission commit hash: pending your required student-authored updates; obtain it with `git rev-parse HEAD` after the final commit.
+- Current commit hash: run `git rev-parse HEAD`; the demo-video commit will have its own final hash.
 
 ## Still required before submission
-- Rewrite the three draft interpretations in `docs/MY_INTERPRETATIONS.md` in your own words and rebuild the report.
-- Complete `evidence/AI_USE.md` truthfully, review the declaration PDF, then print and sign it.
+- Rewrite the three draft interpretations in `docs/MY_INTERPRETATIONS.md` in your own words and rebuild the report with `python -m src.report`.
+- Review the declaration and confirm all statements are accurate.
 - Record your own continuous demo video as `evidence/AI_A2_2527889_DEMO.mp4`.
-- Push the finished project, update the final commit hash above, create `AI_A2_2527889.zip`, and submit it through the INES e-learning platform.
+- Commit and push the video as the final project change, then run `git rev-parse HEAD` to get the final hash, create `AI_A2_2527889.zip`, and submit it through the INES e-learning platform.
 
 ## Known limitations
 - Synthetic data from a simple linear rule plus Gaussian noise; scores will not carry over to real farms.

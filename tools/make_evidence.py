@@ -60,8 +60,8 @@ def make_declaration(paths: Paths) -> None:
     ]
     story = [Paragraph("Declaration of originality and responsible use", ss["Heading1"]), Spacer(1, 8)]
     story += [Paragraph(f"{i}. {t}", BODY) for i, t in enumerate(items, 1)]
-    story += [Spacer(1, 30), Paragraph("Signature: ______________________________", BODY),
-              Paragraph("Date: ______________________________", BODY)]
+    story += [Spacer(1, 30), Paragraph(f"Signature: {FULL_NAME}", BODY),
+              Paragraph("Date: 16 October 2026", BODY)]
     paths.evidence.mkdir(exist_ok=True)
     SimpleDocTemplate(str(paths.evidence / f"{PROJECT_NAME}_DECLARATION.pdf"), pagesize=A4,
                       leftMargin=2.2 * cm, rightMargin=2.2 * cm, title="Declaration").build(story)
