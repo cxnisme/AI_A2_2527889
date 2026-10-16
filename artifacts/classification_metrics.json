@@ -114,8 +114,8 @@
         "fn": 5,
         "tp": 27
       },
-      "cv_roc_auc_mean": 0.9556232686980609,
-      "cv_roc_auc_std": 0.018521397907881827
+      "cv_roc_auc_mean": 0.9561495844875347,
+      "cv_roc_auc_std": 0.018763832204724776
     }
   },
   "selected_model": "logistic_regression",

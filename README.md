@@ -40,7 +40,7 @@ uvicorn app:app --host 127.0.0.1 --port 8000      # interactive docs: http://127
 | `docs/AI_A2_2527889_REPORT.pdf` | 7-page report generated from the artifacts; `docs/MY_INTERPRETATIONS.md` currently contains draft interpretations that must be rewritten by the student |
 | `samples/` | `valid.json`, `invalid.json` |
 | `tests/` | 10 pytest tests |
-| `evidence/` | test log, declaration, `AI_USE.md`, and the required demo video (not yet recorded) |
+| `evidence/` | test log, declaration, `AI_USE.md`, and the recorded demo video |
 | `tools/make_evidence.py` | builds the test-log and declaration PDFs |
 
 Extra packages beyond the required list: **reportlab** (builds the PDF report), **httpx** (needed by FastAPI's test client), **uvicorn** (serves the API).
@@ -66,8 +66,8 @@ Invalid input returns HTTP 422 with `{"error": "invalid_input", "details": [{"fi
 ## Still required before submission
 - Rewrite the three draft interpretations in `docs/MY_INTERPRETATIONS.md` in your own words and rebuild the report with `python -m src.report`.
 - Review the declaration and confirm all statements are accurate.
-- Record your own continuous demo video as `evidence/AI_A2_2527889_DEMO.mp4`.
-- Commit and push the video as the final project change, then run `git rev-parse HEAD` to get the final hash, create `AI_A2_2527889.zip`, and submit it through the INES e-learning platform.
+- The supplied demo video is 5 minutes 25 seconds; the assignment requests one unedited video of no more than 2 minutes. Replace it with a compliant recording before submission.
+- After finalizing the interpretations and video, commit and push the project, run `git rev-parse HEAD` for the final hash, create `AI_A2_2527889.zip`, and submit it through the INES e-learning platform.
 
 ## Known limitations
 - Synthetic data from a simple linear rule plus Gaussian noise; scores will not carry over to real farms.

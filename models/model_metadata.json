@@ -47,8 +47,8 @@
   "versions": {
     "python": "3.12.3",
     "scikit_learn": "1.9.1",
-    "numpy": "1.26.3",
-    "pandas": "2.2.3"
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
   },
   "intended_use": "Classroom decision-support prototype; not a replacement for an agronomist."
 }
