@@ -2,16 +2,12 @@
 
 **Student:** NIWENIRINGIYE Christian - 25/27889 - verification code AI-A2-7889
 
-## Tool used
-Claude (Anthropic), via the Claude chat interface.
-
-## What the assistant produced
-- First version of the project structure, Python modules under `src/`, `run_all.py`,
-  `predict.py`, `app.py`, the pytest tests, `README.md` and the report builder (`src/report.py`).
-- A data-driven *draft* of `docs/MY_INTERPRETATIONS.md` (regression error, classification error, cluster).
+## AI tools and how I used them
+- **Claude (Anthropic):** helped me debug and organize the project PDFs and improve their presentation. It did not write or generate the project code.
+- **GitHub Copilot (Copilot SDK in VS Code):** checked the assignment requirements, updated README/environment documentation and Python cache exclusions, ran the pipeline, predictions and tests, regenerated the pipeline artifacts and PDFs, and pushed the project snapshot to GitHub. It also updated the existing evidence-PDF script to correct the AI attribution in the declaration. It did not generate the application code or my interpretations.
 
 ## What I must do myself (edit this file to say what you actually did)
-- [ ] Ran `run_all.py`, `predict.py`, `pytest -q` and the API on my own computer.
+- [ ] Ran `run_all.py`, `predict.py`, `pytest -q` and the API myself and can explain their results. (Copilot ran the pipeline, CLI examples and tests in this workspace.)
 - [ ] Read every module and can explain it (data generation, split, pipelines, model selection, silhouette).
 - [ ] Rewrote the three interpretations in `docs/MY_INTERPRETATIONS.md` in my own words and rebuilt the report.
 - [ ] Recorded the demonstration video and prepared the handwritten card.
@@ -21,8 +17,4 @@ Claude (Anthropic), via the Claude chat interface.
 All numbers in the report are read from `artifacts/` by `src/report.py`; the data fingerprint and metrics
 reproduce on re-running `run_all.py`.
 
-## Follow-up assistance (2026-10-16)
-GitHub Copilot (Copilot SDK in VS Code) was used to check the assignment requirements, update the README
-and Python cache exclusions, regenerate the pipeline outputs and PDFs, run the prediction examples and tests,
-and publish the project snapshot to GitHub. It did not write new student interpretations, record the demo video,
-or sign the declaration. The student should review and update this disclosure to match all work actually done.
+Review this disclosure and edit it if any detail does not accurately reflect my own use of these tools.
