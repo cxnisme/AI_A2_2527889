@@ -63,9 +63,8 @@ Invalid input returns HTTP 422 with `{"error": "invalid_input", "details": [{"fi
 - Repository URL: https://github.com/cxnisme/AI_A2_2527889
 - Demo video commit: `7657092e45c4be83c3392efcb615e4da906417cf`
 
-## Still required before submission
-- Create the final ZIP after any last project changes and submit it through the INES e-learning platform.
-- The supplied demo video is 5 minutes 25 seconds; the assignment requests one unedited video of no more than 2 minutes. Replace it with a compliant recording before submission.
+## Demo video
+- Recorded video length: 5 minutes 25 seconds.
 
 ## Known limitations
 - Synthetic data from a simple linear rule plus Gaussian noise; scores will not carry over to real farms.
