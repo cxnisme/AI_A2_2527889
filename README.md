@@ -61,7 +61,7 @@ Invalid input returns HTTP 422 with `{"error": "invalid_input", "details": [{"fi
 
 ## Repository
 - Repository URL: https://github.com/cxnisme/AI_A2_2527889
-- Demo video commit: `e6a3ae7d658d2ec5aa8be1ec514c32a786f65b03`
+- Demo video commit: `7657092e45c4be83c3392efcb615e4da906417cf`
 
 ## Still required before submission
 - Create the final ZIP after any last project changes and submit it through the INES e-learning platform.
