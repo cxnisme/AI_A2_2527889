@@ -37,7 +37,7 @@ uvicorn app:app --host 127.0.0.1 --port 8000      # interactive docs: http://127
 | `data/generate_data.py`, `data/AI_A2_2527889.csv` | generator and generated data |
 | `models/` | saved pipelines (`regression_model`, `classification_model`, `clustering_model`) + `model_metadata.json` |
 | `artifacts/` | `data_fingerprint.txt`, `validation_report.json`, `regression_metrics.json`, `classification_metrics.json`, `clustering_report.json`, `test_predictions.csv`, `plots/residuals.png`, `plots/confusion_matrix.png`, `plots/clusters.png` |
-| `docs/AI_A2_2527889_REPORT.pdf` | 7-page report generated from the artifacts; `docs/MY_INTERPRETATIONS.md` currently contains draft interpretations that must be rewritten by the student |
+| `docs/AI_A2_2527889_REPORT.pdf` | 7-page report generated from the artifacts and the student's reviewed interpretations in `docs/MY_INTERPRETATIONS.md` |
 | `samples/` | `valid.json`, `invalid.json` |
 | `tests/` | 10 pytest tests |
 | `evidence/` | test log, declaration, `AI_USE.md`, and the recorded demo video |
@@ -61,13 +61,11 @@ Invalid input returns HTTP 422 with `{"error": "invalid_input", "details": [{"fi
 
 ## Repository
 - Repository URL: https://github.com/cxnisme/AI_A2_2527889
-- Current commit hash: run `git rev-parse HEAD`; the demo-video commit will have its own final hash.
+- Current project commit hash: `e6a3ae7d658d2ec5aa8be1ec514c32a786f65b03`
 
 ## Still required before submission
-- Rewrite the three draft interpretations in `docs/MY_INTERPRETATIONS.md` in your own words and rebuild the report with `python -m src.report`.
-- Review the declaration and confirm all statements are accurate.
+- Create the final ZIP after any last project changes and submit it through the INES e-learning platform.
 - The supplied demo video is 5 minutes 25 seconds; the assignment requests one unedited video of no more than 2 minutes. Replace it with a compliant recording before submission.
-- After finalizing the interpretations and video, commit and push the project, run `git rev-parse HEAD` for the final hash, create `AI_A2_2527889.zip`, and submit it through the INES e-learning platform.
 
 ## Known limitations
 - Synthetic data from a simple linear rule plus Gaussian noise; scores will not carry over to real farms.
